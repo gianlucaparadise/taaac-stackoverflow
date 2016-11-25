@@ -1,9 +1,9 @@
 {
-    "name": "Stackoverflow false friends",
+    "name": "TAAAC for Stackoverflow",
     "version": "0.1",
-    "description": "Removes false friends.",
+    "description": "Points out wrong accepted answers on Stackoverflow.",
     "browser_action": {
-        "default_title": "Removes false friends2.",
+        "default_title": "TAAAC",
         "default_icon": "imgs/icon_16.png",
         "default_popup": "popup.html"
     },
@@ -14,7 +14,10 @@
     },
     "content_scripts": [
         {
-            "matches": ["http://stackoverflow.com/questions/*", "https://stackoverflow.com/questions/*"],
+            "matches": [
+                "http://stackoverflow.com/questions/*",
+                "https://stackoverflow.com/questions/*"
+            ],
             "js": [
                 "libs/jquery-3.1.1.min.js",
                 "libs/lodash.min.js",
