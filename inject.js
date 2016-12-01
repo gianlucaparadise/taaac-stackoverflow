@@ -4,9 +4,10 @@ let voteCountClass = ".vote-count-post";
 let voteCheckmarkClass = ".vote-accepted-on";
 let voteDivClass = ".vote";
 
-let checkGreenUrl = chrome.extension.getURL('imgs/check_green.svg');
+let color = "yellow";
+let checkMarkUrl = chrome.extension.getURL('imgs/check_' + color + '.svg');
 let checkGrayUrl = chrome.extension.getURL('imgs/check_gray.svg');
-let checkGreenElement = $("<img src='" + checkGreenUrl + "' title=\"This is the top voted answer and should be accepted\" \\>");
+let checkMarkElement = $("<img src='" + checkMarkUrl + "' title=\"This is the top voted answer and should be accepted\" \\>");
 let checkGrayElement = $("<img src='" + checkGrayUrl + "' title=\"This is the top voted answer and should be accepted\" \\>");
 
 let acceptedAnswer = $(acceptedAnswerClass);
@@ -27,7 +28,7 @@ let topVotedAnswerId = $(topVotedAnswer)[0].id;
 */
 
 if (topVotedAnswerId !== acceptedAnswerId) {
-    $(topVotedAnswer).find(voteDivClass).append(checkGreenElement);
+    $(topVotedAnswer).find(voteDivClass).append(checkMarkElement);
     $(acceptedAnswer).find(voteCheckmarkClass).remove();
     $(acceptedAnswer).find(voteDivClass).append(checkGrayElement);
 }

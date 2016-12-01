@@ -31,6 +31,11 @@
         "http://stackoverflow.com/questions/*",
         "https://stackoverflow.com/questions/*"
     ],
-    "web_accessible_resources": ["imgs/check_green.svg", "imgs/check_gray.svg"],
+    "web_accessible_resources": [
+        "imgs/check_green.svg",
+        "imgs/check_yellow.svg",
+        "imgs/check_orange.svg",
+        "imgs/check_gray.svg"
+    ],
     "manifest_version": 2
 }
