@@ -1,13 +1,13 @@
 {
     "name": "TAAAC for Stackoverflow",
-    "version": "0.1",
+    "version": "0.5",
     "description": "Points out wrong accepted answers on Stackoverflow.",
     "browser_action": {
         "default_title": "TAAAC",
         "default_icon": "imgs/icon_16.png",
         "default_popup": "popup.html"
     },
-    "icons": { 
+    "icons": {
         "16": "imgs/icon_16.png",
         "48": "imgs/icon_48.png",
         "128": "imgs/icon_128.png"
