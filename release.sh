@@ -1,0 +1,1 @@
+zip -r release-data/taaac-stackoverflow_v.zip . --exclude @release_exclude.lst

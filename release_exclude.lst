@@ -1,0 +1,7 @@
+*.gitignore
+.git/*
+.vscode/*
+release-data/*
+*.lst
+*.sh
+*.DS_Store*

@@ -1,6 +1,6 @@
 {
     "name": "TAAAC for Stackoverflow",
-    "version": "0.5",
+    "version": "0.6",
     "description": "Points out wrong accepted answers on Stackoverflow.",
     "browser_action": {
         "default_title": "TAAAC",
